@@ -24,8 +24,8 @@
     ],
     "env": {
         "DB_HOST": "srv1386.hstgr.io",
-        "DB_USER": "u739277164_cpcpcp",
-        "DB_PASSWORD": "Vraj@1011",
-        "DB_NAME": "u739277164_cpcpcp"
+        "DB_USER": "u739277164_cs_stage",
+        "DB_PASSWORD": "Aidges@1011",
+        "DB_NAME": "u739277164_cs_stage"
     }
 }
