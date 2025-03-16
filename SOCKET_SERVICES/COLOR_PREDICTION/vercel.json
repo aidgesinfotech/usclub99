@@ -1,0 +1,31 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "server.js",
+            "use": "@vercel/node"
+        },
+        {
+            "src": "api/cleanup.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/api/(.*)",
+            "dest": "/api/$1.js"
+        }
+    ],
+    "crons": [
+        {
+            "path": "/api/cleanup",
+            "schedule": "59 23 * * *"
+        }
+    ],
+    "env": {
+        "DB_HOST": "srv1386.hstgr.io",
+        "DB_USER": "u739277164_cs_stage",
+        "DB_PASSWORD": "Aidges@1011",
+        "DB_NAME": "u739277164_cs_stage"
+    }
+}
